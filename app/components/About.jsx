@@ -1,8 +1,9 @@
 var React       = require("react");
 
 
-var About = (props) => {
-    return (
+var About = React.createClass({
+   render: function(){
+        return (
         <div>
             <h1 className="text-center page-title">About</h1>
             <p>This is a Timer application build on React. I have built this
@@ -18,6 +19,7 @@ var About = (props) => {
             </ul>
         </div>
         );
-};
+   } 
+});
 
 module.exports = About;
